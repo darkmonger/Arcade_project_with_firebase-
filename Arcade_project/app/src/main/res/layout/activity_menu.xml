@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu_activity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="281dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="Welcome"
+        android:textSize="60sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/button_games"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_games"
+        android:layout_width="261dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="65dp"
+        android:text="Games"
+        app:layout_constraintBottom_toTopOf="@+id/button_information"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button_information"
+        android:layout_width="259dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="69dp"
+        android:text="İnformation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_games" />
+
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="253dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="72dp"
+        android:text="Exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_information" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
